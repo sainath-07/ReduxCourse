@@ -1,9 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 
 const App=()=>{
   return (
-       <p >hello react</p>
+       <h1 className='text-center'>hello react</h1>
   );
 }
 
