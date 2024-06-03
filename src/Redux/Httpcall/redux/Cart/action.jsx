@@ -4,3 +4,9 @@ export const AddToCart=(Eachproduct)=>{
         payload : Eachproduct
     }
 }
+export const DeleteCart=(id)=>{
+    return {
+        type :"DELETE_FROM_CART",
+        payload : id
+    }
+}

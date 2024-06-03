@@ -1,13 +1,19 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbarhttp from "../Navbar/navbar";
+import { DeleteCart } from "../../redux/Cart/action";
 
 const AddToCartPage = () => {
     const { cart } = useSelector(state => state.cart);
     
-    const handleDelete = (index) => {
+   
+    const dispatch=useDispatch()
+    
+    const handleDelete = (id) => {
         // Dispatch an action to remove item from cart based on index
+        dispatch(DeleteCart(id))
+    
         
     }
 
@@ -24,7 +30,7 @@ const AddToCartPage = () => {
                                 <h5 className="card-title">{each.title}</h5>
                                 <p className="card-text">{each.description}</p>
                                 <p className="card-text"><strong>Price:</strong> ${each.price}</p>
-                                <button className="btn btn-danger" onClick={() => handleDelete(index)}>Delete</button>
+                                <button className="btn btn-danger" onClick={() => handleDelete(each.id)}>Delete</button>
                             </div>
                         </div>
                     </div>
