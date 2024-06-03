@@ -1,12 +1,12 @@
 import './App.css';
-import Httpcall from './Redux/Httpcall/react/httpCall';
+import NavigationStack from './Redux/Httpcall/react/Navigationstack/navigationstack';
+// import NavigationStack from "./Redux/Httpcall/react/NavigationStack"
 
 
 const App=()=>{
   return (
     <>
-       <h1 className='text-center'>App.js file</h1>
-        <Httpcall/>
+       <NavigationStack/> 
        </>
   );
 }

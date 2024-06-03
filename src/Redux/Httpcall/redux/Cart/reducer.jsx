@@ -1,0 +1,16 @@
+let initialstate={
+    cart : []
+}
+
+export const cartReducer=(state=initialstate,action)=>{
+    switch(action.type){
+        case "ADD_TO_CART" : 
+          return {...state,cart :[...state.cart,action.payload]}
+
+        case "DELETE_CART" :
+            return state
+        default : 
+        return state
+    }
+     
+}
