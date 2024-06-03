@@ -5,12 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
-import { ProfileStore } from './Redux-class-May28/Redux/store';
+import { storeRedux } from './Redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Provider  store={ProfileStore}>
+    <Provider  store={storeRedux}>
 
     <App />
     </Provider>
