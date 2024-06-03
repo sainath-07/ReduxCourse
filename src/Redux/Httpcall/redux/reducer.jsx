@@ -13,5 +13,7 @@ export const httpcallreducer=(state=initialState,action)=>{
                 return {...state,error:"Something went wrong..."}
              case "PRODUCTS_LOADING" :
                 return {...state,loading:true}
+               default :
+                 return state
        }
 }
