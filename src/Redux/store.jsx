@@ -1,9 +1,10 @@
-import { legacy_createStore} from 'redux'
-import { singleReducer } from './Redux-class-May28/Redux/combinereducer'
+import { applyMiddleware, legacy_createStore} from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension';
+import { thunk } from 'redux-thunk';
+import { singleReducerhttp } from './Httpcall/redux/combinereducer';
 
 
 export const storeRedux=legacy_createStore(
-    singleReducer,
-    composeWithDevTools()
+    singleReducerhttp,
+    composeWithDevTools(applyMiddleware(thunk))
 )

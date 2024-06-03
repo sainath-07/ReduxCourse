@@ -1,12 +1,12 @@
 import './App.css';
-import ProfileFunctionality from './Redux/Redux-class-May28/React/profileFunctionality';
+import Httpcall from './Redux/Httpcall/react/httpCall';
 
 
 const App=()=>{
   return (
     <>
        <h1 className='text-center'>App.js file</h1>
-        <ProfileFunctionality/>
+        <Httpcall/>
        </>
   );
 }

@@ -53,6 +53,17 @@ const ProfileFunctionality=()=>{
                     }
                 ))
              }
+
+             
+            // const updateProfileDetails=()=>{
+            //     dispatch(actionReducer(
+            //         {
+            //             name : "sainath",
+            //             email : "sainath@gmail.com",
+            //             phoneNumber : 9010995222
+            //         }
+            //     ))
+            //  }
     return(
         <>
 
