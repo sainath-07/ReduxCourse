@@ -1,12 +1,12 @@
 import './App.css';
-import BookcountFunctionality from './Redux-Classes-May27/React/bookFunctionality';
+import ProfileFunctionality from './Redux-class-May28/React/profileFunctionality';
 
 
 const App=()=>{
   return (
     <>
        <h1 className='text-center'>hello react</h1>
-        <BookcountFunctionality/>
+        <ProfileFunctionality/>
        </>
   );
 }
