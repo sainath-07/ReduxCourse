@@ -1,4 +1,5 @@
 import './App.css';
+import Password from './React interview question/password';
 import Question3 from './React interview question/question3';
 import Question4 from './React interview question/question4';
 import Question5 from './React interview question/question5';
@@ -9,7 +10,7 @@ import NavigationStack from './Redux/Httpcall/react/Navigationstack/navigationst
 const App=()=>{
   return (
     <>
-       <Question5/> 
+       <Password/>
        
        </>
   );
