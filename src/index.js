@@ -6,15 +6,17 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Provider } from 'react-redux';
 import { storeRedux } from './Redux/store';
+import counterStore from './Redux/counterapp/redux/store';
+import formstore from './Redux/formdata/redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Provider  store={storeRedux}>
+  // <React.StrictMode>
+    <Provider  store={formstore}>
 
     <App />
     </Provider>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

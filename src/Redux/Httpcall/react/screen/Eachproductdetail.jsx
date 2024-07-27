@@ -135,7 +135,7 @@ const Eachproductdetails = () => {
           ) : (
             <>
               <button
-                onClick={() => eachproductaddtocart(eachproductitem)}
+                onClick={() => eachproductaddtocart( )}
                 className="bg-primary text-white border border-none"
               >
                 Add to cart
