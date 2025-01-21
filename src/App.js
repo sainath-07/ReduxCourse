@@ -13,16 +13,19 @@ import Question1 from './React interview question/question1';
 import Question2 from './React interview question/question2';
 import DropDown from './React interview question/dropdown';
 import Checkbox from './React interview question/checkboxdelete';
+import TodoListwithuseReducer from './TODO_LIST/Todolist_USEREDUCER/TodoListwithuseReducer';
+import TodoListwithredux from './TODO_LIST/Todolist_React_Redux/react/TodoListwithredux';
 // import NavigationStack from "./Redux/Httpcall/react/NavigationStack"
 
 
-const App=()=>{
+const App = () => {
   return (
     <>
-       {/* <Question5/> */}
-       <Checkbox/>
-       
-       </>
+      {/* <Question5/> */}
+      {/* <Checkbox/> */}
+      <TodoListwithredux />
+
+    </>
   );
 }
 

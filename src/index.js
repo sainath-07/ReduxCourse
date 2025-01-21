@@ -8,14 +8,15 @@ import { Provider } from 'react-redux';
 import { storeRedux } from './Redux/store';
 import counterStore from './Redux/counterapp/redux/store';
 import formstore from './Redux/formdata/redux/store';
+import { todoStore } from './TODO_LIST/Todolist_React_Redux/redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
-    <Provider  store={formstore}>
+  <Provider store={todoStore}>
 
     <App />
-    </Provider>
+  </Provider>
   // </React.StrictMode>
 );
 
